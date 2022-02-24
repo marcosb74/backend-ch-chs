@@ -10,6 +10,7 @@ let productApi = new ProductsApi();
 const argv = minimist(process.argv.slice(2));
 const { cmd, id, nombre, precio, stock } = argv;
 
+//node index.js --cmd agregar --nombre "regla" --precio "10" --stock "10" - example of cmd
 const ejecucion = async () => {
   try {
     switch (cmd.toLowerCase()) {
